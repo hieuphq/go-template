@@ -1,0 +1,5 @@
+local:
+  dialect: postgres
+  datasource: host=127.0.0.1 dbname={{Name}}_db password=postgres user=postgres sslmode=disable
+  dir: migrations/postgres/schema
+  table: migrations

@@ -1,0 +1,24 @@
+version: "3"
+services:
+  {{Name}}_db:
+    image: postgres:11.5
+    restart: always
+    environment:
+      POSTGRES_DB: {{Name}}_db
+      POSTGRES_USER: {{DB_User}}
+      POSTGRES_PASSWORD: {{DB_Password}}
+    container_name: {{Name}}_db
+    ports:
+      - {{DB_Port}}:5432
+    expose:
+      - 5432
+
+  {{Name}}_test:
+    image: postgres:11.5-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: test
+    container_name: {{Name}}_test
+    ports:
+      - 5438:5432

@@ -1,0 +1,16 @@
+{
+    "Name": "go-template",
+    "Author": "Hieu Phan",
+    "Email": "hieu.phq@gmail.com",
+    "Port": 8080,
+    "DB_Port": 5432,
+    "DB_User": "postgres",
+    "DB_Password": "postgres",
+    "Package": "github.com/hieuphq/go-template",
+    "PrintHomeDir": true,
+    "License": [
+        "MIT",
+        "GNU GPL v3.0",
+        "Apache Software License 2.0"
+    ]
+}
